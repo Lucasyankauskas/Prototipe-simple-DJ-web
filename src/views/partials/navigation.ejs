@@ -1,0 +1,153 @@
+<!-- BOTONES MENU -->
+<div class="menu">
+    <button type="button"
+            class="menu-link"
+            data-bs-toggle="modal"
+            data-bs-target="#About">
+        ABOUT
+    </button>
+
+    <button type="button"
+            class="menu-link"
+            data-bs-toggle="modal"
+            data-bs-target="#Contact">
+        CONTACT
+    </button>
+</div>
+
+
+<!-- ABOUT -->
+<div class="modal fade" id="About" tabindex="-1" aria-labelledby="AboutLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="bio-layout">
+
+            <!--/ REDES -->
+                    <div class="bio-social">
+                        <a href="#" target="_blank">
+                        <img src="img/spoty-negro.png" alt="Spotify">
+                        </a>
+                        <a href="https://www.youtube.com/@lucianomartz" target="_blank">
+                        <img src="img/youtube-negro.png" alt="YouTube">
+                        </a>
+                        <a href="https://www.instagram.com/luciano.martz" target="_blank">
+                        <img src="img/instagram-negro.png" alt="Instagram">
+                        </a>
+                        <a href="https://soundcloud.com/luciano-martz" target="_blank">
+                        <img src="img/sound-negro.png" alt="SoundCloud">
+                        </a>
+                    </div>    
+
+            <!-- TEXTO BIOGRAFÍA -->
+                    <div class="bio-text">
+                    <h1>Biografía</h1>
+                        <div class="bio-description">
+                            <p>
+                            Soy un DJ y productor argentino de Buenos Aires.
+                            Mi propuesta musical parte del house y el deep house,
+                            combinando sonidos de progressive house, indie dance,
+                            tech house y minimal tech.
+                            </p>
+                            <p>
+                            En mis sets busco construir un recorrido natural,
+                            comenzando desde lugares más profundos y llevando
+                            la energía de manera gradual. Más que limitarse a un
+                            solo género, conecto diferentes sonidos manteniendo
+                            el groove, la intención y un hilo conductor a lo largo
+                            de cada presentación.
+                            </p>
+                            <p>
+                            A lo largo de mi carrera me he presentado en distintos
+                            espacios de la escena de Buenos Aires, entre ellos
+                            Afrika Club, Zegre, Downtempo, Lignéé y Morocco.
+                            </p>
+                        </div>
+                        <div class="bio-signature ">
+                        <img src="/img/firma.png" alt="Firma de Luciano Martz">
+                        </div>
+                    </div>
+
+            <!-- FOTO -->
+                    <div class="bio-photo">
+                        <img src="/img/fondo-about.png" alt="Luciano Martz">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- CONTACT -->
+<div class="modal fade" id="Contact" tabindex="-1" aria-labelledby="ContactLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="contact-layout">
+                    <!-- INFORMACIÓN IZQUIERDA -->
+                    <div class="contact-info">
+
+                        <!-- REDES -->
+                        <div class="contact-social">
+                            <a href="#" target="_blank">
+                                <img src="img/spoty-negro.png" alt="Spotify">
+                            </a>
+                            <a href="https://www.instagram.com/luciano.martz" target="_blank">
+                                <img src="img/instagram-negro.png" alt="Instagram">
+                            </a>
+                            <a href="https://www.youtube.com/@lucianomartz" target="_blank">
+                                <img src="img/youtube-negro.png" alt="YouTube">
+                            </a>
+                            <a href="https://soundcloud.com/luciano-martz" target="_blank">
+                                <img src="img/sound-negro.png" alt="SoundCloud">
+                            </a>
+                        </div>
+
+                        <!-- DATOS -->
+                        <div class="contact-details">
+                            <p>Dj/Productor</p>
+                            <a href="mailto:lucianomartzoficial@gmail.com">
+                                lucianomartzoficial@gmail.com
+                            </a>
+                            <img src="/img/firma.png" alt="Luciano Martz">
+                        </div>
+                    </div>
+
+                    <!-- FORMULARIO DERECHA -->
+                    <div class="contact-form-container">
+                        <h1>CONTACTO</h1>
+                        <form class="contact-form">
+                            <input
+                                type="text"
+                                name="nombre"
+                                placeholder="Nombre"
+                                required
+                            >
+                            <input
+                                type="tel"
+                                name="telefono"
+                                placeholder="Teléfono"
+                            >
+                            <textarea
+                                name="mensaje"
+                                placeholder="Mensaje"
+                                required
+                            ></textarea>
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1662 @@
+
+
+/*----------------------- FUENTES -----------------------*/
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('fonts/HelveticaNeueMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+/*----------------------- MENU MODAL -----------------------*/
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 95%;
+    margin: auto;
+    padding: 20px 0 10px 0;
+    border-bottom: 3px solid #000;
+}
+
+
+.menu-link {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: "Helvetica Neue Medium", "Helvetica Neue", inter, sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s ease;
+}
+
+.menu-link:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------- HOME -----------------------------------------*/
+
+body {
+    background-color: #E4DAD2;
+    font-family: 'Helvetica Neue Medium', 'Helvetica Neue', inter, sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.fondo-notas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.contenido-hero {
+    position: relative;
+    z-index: 1;
+}
+
+.firma {
+    width: 1050px; 
+    height: auto;
+    position: absolute;
+    right: 50%;
+    top: 10%;
+}
+
+.fondo-home {
+    width: 145%;
+    height: auto;
+    max-width: none;
+    display: block;
+    margin-left: -15%;
+}
+
+.social-buttons {
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.social-buttons img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-buttons img:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+}
+
+
+.foto-mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------- EVENTS -----------------------------------*/
+
+.events {
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    background: #000;
+    color: #fff;
+    align-items: center;
+    min-height: 0;
+}
+
+.events-image {
+    width: 100%;
+    height: 400px;
+    aspect-ratio: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.events-image::before,
+.events-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.events-image::before {
+    left: 0;
+    background: linear-gradient(to right, #000 0%, transparent 100%);
+}
+
+.events-image::after {
+    right: 0;
+    background: linear-gradient(to left, #000 0%, transparent 100%);
+}
+
+.events-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.events-content {
+    min-width: 0;
+    padding: 25px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.events-content h2 {
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.events-title-line {
+    width: 34px;
+    height: 2px;
+    background: #ff6464;
+    margin-top: 3px;
+    margin-bottom: 45px;
+}
+
+.events-timeline {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    gap: 0;
+}
+
+.events-timeline::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    right: 10px;
+    height: 1px;
+    background: #666;
+}
+
+.event {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-width: 0;
+    padding-right: 8px;
+}
+
+.event-dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    background: #000;
+    margin-bottom: 5px;
+}
+
+.event:first-child .event-dot,
+.event:nth-child(2) .event-dot {
+    border-color: #ff6464;
+}
+
+.event time {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.event h3 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.no-events {
+    color: #777;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------- FOOTER -----------------------*/
+
+.footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    clear: both;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    padding: 5px 15px;
+    background-color: #050505;
+    border-top: 1px solid #333;
+    color: #555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* FIRMA */
+
+.footer-signature img {
+    width: 120px;
+    height: auto;
+    display: block;
+    opacity: 0.3;
+}
+
+/* COPYRIGHT */
+
+.footer-copy {
+    color: #4B4B4B;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* BOOKINGS */
+
+.footer-bookings {
+    color: #4B4B4B;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.footer-bookings div {
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.footer-bookings a {
+    color: #4B4B4B;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bookings a:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------- ABOUT -----------------------------------*/
+
+#About .modal-dialog {
+    width: 97vw;
+    max-width: 1900px;
+    margin: 15vh auto;
+}
+
+#About .modal-content {
+    height: auto;
+    min-height: 0;
+    background-color: #E4DAD2;
+    color: #080808;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#About .modal-body {
+    padding: 0;
+}
+
+#About .modal-header {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    padding: 0;
+    border: none;
+}
+
+#About .modal-body {
+    padding: 0;
+}
+
+.modal-backdrop.show {
+    opacity: 0.9;
+}
+
+.bio-layout {
+    display: grid;
+    grid-template-columns: 125px minmax(0, 1fr) minmax(0, 1fr);
+    align-items: stretch;
+    position: relative;
+    min-height: 0;
+    padding-right: 0;
+    column-gap: 0;
+}
+
+.bio-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    padding: 0px 40px 50px 10px;
+}
+
+.bio-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.bio-social a:hover {
+    transform: scale(1.12);
+}
+
+.bio-social img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.bio-text {
+    padding: 10px 0px 50px 200px;
+    min-width: 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio-description {
+    border-left: 3px solid #333;
+    padding-left: 20px;
+    max-width: 520px;
+    width: 100%;
+}
+
+.bio-text h1 {
+    font-family: 'Helvetica Neue Medium', 'Helvetica Neue', Inter, sans-serif;
+    font-size: clamp(48px, 4.5vw, 76px);
+    margin: 0 0 20px;
+    line-height: 0.95;
+    padding-left: 23px;
+}
+
+.bio-description p {
+    font-family: 'Helvetica Neue', Inter, sans-serif;
+    font-weight: 400;
+    font-size: clamp(20px, 2vw, 20px);
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+    margin: 0 0 14px;
+}
+
+.bio-signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    margin: 0;
+    box-sizing: border-box;
+    border-left: 3px solid #333;
+    padding-left: 20px;
+}
+
+.bio-signature img {
+    display: block;
+    width: 220px;
+    max-width: 50%;
+    height: auto;
+    margin: 0px auto -30px auto;
+    object-fit: contain;
+}
+
+.bio-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bio-photo img {
+    display: block;
+    width: 57%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------  CONTACT -----------------------------------*/
+
+
+
+#Contact .modal-dialog {
+    width: 95vw;
+    max-width: 1400px;
+    margin: 12vh auto;
+}
+
+#Contact .modal-content {
+    min-height: 700px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#Contact .modal-body {
+    padding: 0;
+}
+
+#Contact .modal-header {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    padding: 0;
+    border: none;
+}
+
+#Contact .btn-close {
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 700px;
+}
+
+
+.contact-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 65px;
+    gap: 12px;
+}
+
+.contact-details p,
+.contact-details a {
+    font-family: 'Helvetica Neue', Inter, sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+}
+
+.contact-details img {
+    width: 230px;
+    height: auto;
+    margin-top: 8px;
+    filter: brightness(0) invert(1);
+}
+
+/* REDES */
+
+.contact-social {
+    position: absolute;
+    left: 35px;
+    bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-social img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+}
+
+.contact-social a:hover img {
+    transform: scale(1.15);
+}
+
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 55px 35px;
+}
+
+.contact-form-container h1 {
+    width: 90%;
+    margin: 0 auto 25px;
+    text-align: left;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.contact-form {
+    width: 90%;
+    min-height: 560px;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    border-radius: 22px 0 22px 0;
+    padding: 60px 55px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.contact-form input {
+    margin-bottom: 65px;
+}
+
+.contact-form textarea {
+    margin-bottom: 130px;
+}
+
+.contact-form button {
+    margin-top: 0;
+    position: static;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #888;
+    border-radius: 0;
+    color: #fff;
+    font-family: inherit;
+    font-size: 19px;
+    padding: 15px 5px 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.contact-form textarea {
+    height: 90px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom-color: #fff;
+}
+
+.contact-form button {
+    width: 55%;
+    padding: 9px 15px;
+    align-self: center;
+    display: block;
+    margin:0 auto;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    background: transparent;
+    color: #fff;
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------- MEDIA QUERIES  RESPONSIVE -----------------------------------*/
+
+
+
+
+
+
+
+/* LAPTOP 1440 */
+
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+    .firma {
+        width: 700px;
+        right: 45%;
+        top: 15%;
+    }
+
+    .social-buttons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-buttons {
+        gap: 25px;
+    }
+
+    .fondo-home {
+    width: 135%;
+    margin-left: -15.5%;
+    }
+
+    .events {
+    grid-template-columns: 40% 60%;
+    }
+
+    .events-image {
+        height: 380px;
+    }
+
+    .bio-text {
+    padding-left: 100px;
+    }
+
+    .bio-photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+.bio-photo img {
+    display: block;
+    width: 80%;
+    height: auto;
+    }
+
+}
+
+
+
+
+/* LAPTOP 1024 */
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+    .hero {
+    height: 60vh;
+    }
+
+    .firma {
+        width: 500px;
+        right: 42%;
+        top: 15%;
+    }
+
+    .social-buttons {
+    left: 3%;
+    top: 50%;
+    gap: 30px;
+    }
+
+    .social-buttons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-buttons {
+        gap: 25px;
+    }
+
+    .fondo-home {
+    width: 150%;
+    margin-left: -25.5%;
+    margin-top: 40px;
+    }
+
+    .events {
+    grid-template-columns: 40% 60%;
+    }
+
+    .events-image {
+        height: 380px;
+    }
+
+    .bio-text {
+    padding-left: 10px;
+    }
+
+    .bio-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    }
+
+.bio-description p {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
+    margin-bottom: 12px;
+    }
+
+    .bio-photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+.bio-photo img {
+    display: block;
+    width: 80%;
+    height: auto;
+    }
+
+
+#Contact .modal-dialog {
+        width: 90vw;
+        max-width: 900px;
+        margin: 8vh auto;
+    }
+
+#Contact .modal-content {
+        min-height: 0;
+    }
+
+.contact-layout {
+        min-height: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+.contact-details {
+        margin-left: 35px;
+        gap: 12px;
+    }
+
+.contact-details p,
+.contact-details a {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+.contact-details img {
+        width: 210px;
+    }
+
+.contact-social {
+        left: 25px;
+        bottom: 30px;
+        gap: 20px;
+    }
+
+.contact-social img {
+        width: 29px;
+        height: 29px;
+    }
+
+.contact-form-container {
+        padding: 55px 30px 30px;
+    }
+
+.contact-form-container h1 {
+        font-size: 29px;
+        margin-bottom: 18px;
+    }
+
+.contact-form {
+        min-height: 450px;
+        padding: 35px 35px 20px;
+    }
+
+.contact-form input {
+        margin-bottom: 40px;
+    }
+
+.contact-form textarea {
+        height: 70px;
+        margin-bottom: 45px;
+    }
+
+.contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+
+.contact-form button {
+        font-size: 18px;
+        width: 55%;
+    }
+
+}
+
+
+
+
+
+
+/* Tablet 768 */
+
+
+@media (max-width: 768px) and (min-width: 577px) {
+
+.hero {
+        height: 57vh;
+        min-height: 550px;
+        position: relative;
+        overflow: hidden;
+    }
+
+.contenido-hero {
+        height: 100%;
+        position: relative;
+    }
+
+.contenido-hero .row {
+        height: 100%;
+    }
+
+.contenido-hero .row > div {
+        height: 100%;
+        position: relative;
+    }
+
+.firma {
+        width: 120%;
+        height: auto;
+        left: 5%;
+        top: 25%;
+    }
+
+.fondo-home {
+        width: 145%;
+        height: auto;
+        max-width: none;
+        position: absolute;
+        left: -10%;
+        bottom: 0;
+    }
+
+.social-buttons {
+        left: 3%;
+        top: 65%;
+        gap: 18px;
+    }
+
+.social-buttons img {
+        width: 32px;
+        height: 32px;
+    }
+
+.events {
+    grid-template-columns: 60% 40%;
+    }
+
+.events-image {
+    height: 320px;
+    }
+
+.events-content {
+    padding: 25px 25px;
+    }
+
+.events-content h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    }
+
+    #About .modal-dialog {
+    width: 96vw;
+    max-width: none;
+    margin: 8vh auto;
+}
+
+#About .modal-content {
+    min-height: 0;
+}
+
+#About .modal-body {
+    padding: 20px;
+}
+
+.bio-layout {
+    display: grid;
+    grid-template-columns: 65px minmax(0, 1.1fr) minmax(0, 0.9fr);
+    column-gap: 15px;
+    align-items: end;
+}
+
+.bio-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    position: static;
+}
+
+.bio-social img {
+    width: 27px;
+    height: 27px;
+}
+
+.bio-text {
+    padding: 0 0 20px 0;
+    min-width: 0;
+}
+
+.bio-text h1 {
+    font-size: 36px;
+    padding-left: 0;
+    margin-bottom: 12px;
+}
+
+.bio-description {
+    max-width: 100%;
+    padding-left: 12px;
+}
+
+.bio-description p {
+    font-size: 13px;
+    line-height: 1.25;
+    letter-spacing: 0.7px;
+    margin-bottom: 10px;
+}
+
+.bio-signature img {
+    width: 150px;
+}
+
+.bio-photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 0;
+}
+
+.bio-photo img {
+    width: 100%;
+    height: auto;
+}
+
+#Contact .modal-dialog {
+    width: 96vw;
+    max-width: none;
+    margin: 6vh auto;
+}
+
+#Contact .modal-content {
+    min-height: 0;
+}
+
+#Contact .modal-body {
+    padding: 0;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 540px;
+}
+
+.contact-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details {
+    margin-left: 35px;
+    gap: 12px;
+}
+
+.contact-details p,
+.contact-details a {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contact-details img {
+    width: 170px;
+    margin-top: 8px;
+}
+
+.contact-social {
+    left: 15px;
+    bottom: 30px;
+    gap: 18px;
+}
+
+.contact-social img {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-form-container {
+    padding: 55px 20px 25px;
+}
+
+.contact-form-container h1 {
+    width: 90%;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    width: 90%;
+    min-height: 440px;
+    padding: 35px 25px 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 15px;
+    padding: 12px 5px 4px;
+}
+
+.contact-form input {
+    margin-bottom: 38px;
+}
+
+.contact-form textarea {
+    height: 65px;
+    margin-bottom: 40px;
+}
+
+.contact-form button {
+    width: 60%;
+    font-size: 17px;
+}
+
+}
+
+
+
+
+
+
+/* ------------- MOBILE 576 ----------------*/
+
+
+
+@media (max-width: 576px)  {
+
+    body {
+    background-color: #000;
+    }
+
+    /* MENU */
+    .menu {
+        width: 90%;
+        gap: 12vw;
+        padding: 16px 0 3px;
+        background: #000;
+        border-bottom: 2px solid #fff;
+    }
+
+    .menu-link {
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+
+    /* HOME */
+    .hero {
+        width: 100%;
+        height: 58svh;
+        min-height: 500px;
+        max-height: 700px;
+        background: #000;
+        overflow: hidden;
+    }
+
+    .fondo-notas,
+    .firma,
+    .fondo-home {
+        display: none;
+    }
+
+    .contenido-hero {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+    pointer-events: none;
+    }
+
+    .contenido-hero .row {
+        height: 100%;
+        margin: 0;
+    }
+
+    .contenido-hero .row > div:first-child {
+        display: none;
+    }
+
+    .contenido-hero .row > div:last-child {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .foto-mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        margin: 0;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    .social-buttons {
+        z-index: 3;
+        left: 7%;
+        top: 65%;
+        gap: 18px;
+    }
+
+    .social-buttons img {
+        width: 25px;
+        height: 25px;
+        filter: brightness(0) invert(1);
+    }
+
+
+    .events {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 360px;
+        min-height: 360px;
+        overflow: hidden;
+        background: #000;
+    }
+
+    .events::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+    pointer-events: none;
+    }
+
+    .events-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .events-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .events-image::before {
+        width: 100%;
+        height: 55%;
+        top: auto;
+        bottom: 0;
+        background: linear-gradient(to top, #000 0%, transparent 100%);
+    }
+
+    .events-image::after {
+        display: none;
+    }
+
+    .events-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .events-timeline {
+        order: 1;
+        margin-top: auto;
+        margin-bottom: 65px;
+    }
+
+    .events-timeline::before {
+        right: 10px;
+    }
+
+    .event time {
+        font-size: 11px;
+    }
+
+    .event h3 {
+        font-size: 13px;
+    }
+
+    .events-content h2 {
+        order: 2;
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    .events-title-line {
+        order: 3;
+        margin-top: 3px;
+        margin-bottom: 0;
+        width: 55px;
+    }
+
+
+    /* FOOTER */
+    .footer {
+        min-height: 62px;
+        padding: 5px 10px;
+        justify-content: space-between;
+    }
+
+    .footer-copy {
+        display: none;
+    }
+
+    .footer-signature img {
+        width: 105px;
+    }
+
+    .footer-bookings {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    .footer-bookings div {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .footer-bookings a {
+        font-size: 9px;
+    }
+
+    /* ABOUT */
+    #About .modal-dialog {
+        width: 90vw;
+        max-width: 360px;
+    }
+
+    #About .modal-content {
+        min-height: 550px;
+    }
+
+    #About .modal-body {
+        padding: 40px 50px 40px 5px;
+    }
+
+    /* REDES + TEXTO */
+    #About .bio-layout {
+        display: grid;
+        grid-template-columns: 45px minmax(0, 1fr);
+        min-height: 490px;
+    }
+
+    #About .bio-photo {
+        display: none;
+    }
+
+    /* REDES */
+    #About .bio-social {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5px;
+        padding-bottom: 0;
+    }
+
+    #About .bio-social img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    /* COLUMNA DEL TEXTO Y LÍNEA */
+    #About .bio-text {
+        grid-column: 2;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid #333;
+        padding: 0px 0px 0px 40px;
+        width: 90%;
+    }
+
+    #About .bio-text h1 {
+        font-size: 32px;
+        line-height: 1;
+        padding: 0;
+        margin: 0 0 50px;
+    }
+
+    #About .bio-description {
+        border: none;
+        padding: 0;
+        width: 100%;
+        max-width: none;
+    }
+
+    #About .bio-description p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.10;
+        letter-spacing: 0.9px;
+        margin-bottom: 10px;
+    }
+
+    /* FIRMA */
+    #About .bio-signature {
+        border-left: none !important;
+        padding-left: 0;
+    }
+
+    #About .bio-text img {
+        max-width: 190px;
+        padding: 0;
+        margin: 0 35px 0 0;
+    }
+
+
+    /* CONTACTO */
+    #Contact .modal-dialog {
+        width: 92vw;
+        max-width: 400px;
+        margin: 8vh auto;
+    }
+
+    #Contact .modal-content {
+        min-height: 0;
+        border: 1px solid #aaa;
+        border-radius: 12px;
+        background: #000;
+    }
+
+    #Contact .modal-header {
+        top: 12px;
+        right: 12px;
+    }
+
+    #Contact .modal-body {
+        padding: 0;
+    }
+
+    /* DISTRIBUCIÓN GENERAL */
+    #Contact .contact-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    /* FORMULARIO ARRIBA */
+    #Contact .contact-form-container {
+        order: 1;
+        width: 100%;
+        padding: 42px 10px 0;
+    }
+
+    #Contact .contact-form-container h1 {
+        width: 85%;
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 16px;
+        margin-left: 56px;
+    }
+
+    #Contact .contact-form {
+        width: 85%;
+        min-height: 350px;
+        padding: 65px 35px 25px;
+        border-radius: 28px 0 28px 0;
+    }
+
+    #Contact .contact-form input {
+        margin-bottom: 35px;
+    }
+
+    #Contact .contact-form textarea {
+        height: 60px;
+        margin-bottom: 25px;
+    }
+
+    #Contact .contact-form input,
+    #Contact .contact-form textarea {
+        font-size: 13px;
+        padding: 10px 0 3px;
+    }
+
+    #Contact .contact-form button {
+        width: 65%;
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    /* INFORMACIÓN ABAJO */
+    #Contact .contact-info {
+        order: 2;
+        width: 100%;
+        min-height: 190px;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+
+    /* REDES VERTICALES */
+    #Contact .contact-social {
+        left: 15px;
+        bottom: 30px;
+        gap: 10px;
+    }
+
+    #Contact .contact-social img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* DATOS */
+    #Contact .contact-details {
+        margin-left: 100px;
+        gap: 8px;
+    }
+
+    #Contact .contact-details p,
+    #Contact .contact-details a {
+        font-size: 12px;
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+
+    #Contact .contact-details img {
+        width: 145px;
+        max-width: 100%;
+        margin-top: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

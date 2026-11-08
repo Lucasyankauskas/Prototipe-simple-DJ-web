@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <!-- MENU -->
+    <%- include('partials/navigation') %>
+
+    <section class="hero">
+        <!-- FONDO NOTAS -->
+        <img src="/img/fondo-notas-musicales.png" class="fondo-notas" >
+
+        <!-- CONTENIDO -->
+        <div class="container contenido-hero">
+            <div class="row align-items-center">
+                <!-- FIRMA -->
+                <div class="col-md-6">
+                <img src="/img/firma.png" class="firma">
+                </div>
+                <!-- Foto DJ -->
+                <div class="col-md-6">
+                <img src="/img/fondo-home.png" class="fondo-home">
+                <!-- Foto exclusiva para celular -->
+                <img src="/img/fondo-home-cel.jpg" class="foto-mobile">
+                </div>
+            </div>
+        </div>
+        
+        <!--/ REDES -->
+        <div class="social-buttons">
+                <a href="#" target="_blank">
+                <img src="img/spoty-negro.png" alt="Spotify">
+            </a>
+
+            <a href="https://www.youtube.com/@lucianomartz" target="_blank">
+                <img src="img/youtube-negro.png" alt="YouTube">
+            </a>
+
+            <a href="https://www.instagram.com/luciano.martz" target="_blank">
+                <img src="img/instagram-negro.png" alt="Instagram">
+            </a>
+
+            <a href="https://soundcloud.com/luciano-martz" target="_blank">
+                <img src="img/sound-negro.png" alt="SoundCloud">
+            </a>
+        </div>    
+    </section>
+
+    <%- include('partials/events') %>
+    <%- include('partials/footer') %>
+</body>
+</html>
