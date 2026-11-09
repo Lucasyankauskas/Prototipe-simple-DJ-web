@@ -891,7 +891,7 @@ body {
 @media (max-width: 1024px) and (min-width: 769px) {
 
     .hero {
-    height: 60vh;
+    height: 80vh;
     }
 
     .firma {
@@ -902,22 +902,22 @@ body {
 
     .social-buttons {
     left: 3%;
-    top: 50%;
-    gap: 30px;
+    top: 60%;
+    gap: 20px;
     }
 
     .social-buttons img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     .social-buttons {
-        gap: 25px;
+        gap: 10px;
     }
 
     .fondo-home {
-    width: 150%;
-    margin-left: -25.5%;
+    width: 110%;
+    margin-left: -10.5%;
     margin-top: 40px;
     }
 
