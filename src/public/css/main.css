@@ -768,7 +768,7 @@ body {
 /* LAPTOP 1440 */
 
 
-@media (max-width: 1440px) and (min-width: 1025px) {
+@media (max-width: 1440px) and (min-width: 1371px) {
     .firma {
         width: 700px;
         right: 45%;
@@ -818,6 +818,70 @@ body {
 
 }
 
+
+
+/* LAPTOP 1366 */
+
+@media (max-width: 1370px) and (min-width: 1025px) {
+
+    .hero {
+        height: 80vh;
+    }
+
+    .firma {
+        width: 600px;
+        right: 40%;
+        top: 15%;
+    }
+
+    .social-buttons {
+        top: 60%;
+        gap: 15px;
+        left: 6%;
+    }
+
+    .social-buttons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fondo-home {
+        width: 119%;
+        margin-left: 1.5%;
+    }
+
+        .bio-text {
+    padding-left: 10px;
+    }
+
+    .bio-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    }
+
+    .bio-description p {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
+    margin-bottom: 12px;
+    }
+
+    .bio-photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+    .bio-photo img {
+    display: block;
+    width: 80%;
+    height: auto;
+    }
+
+}
 
 
 
