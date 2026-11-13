@@ -761,7 +761,110 @@ body {
 
 
 
+/* LAPTOP FULL HD 1920 */
 
+@media (min-width: 1441px) and (max-width: 1920px)
+       and (min-height: 850px) and (max-height: 1000px) {
+
+    /* HOME */
+
+    .hero {
+        height: 90vh;
+    }
+
+    .firma {
+        width: 850px;
+        right: 45%;
+        top: 12%;
+    }
+
+    .social-buttons img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-buttons {
+        gap: 25px;
+    }
+
+    .fondo-home {
+        width: 140%;
+        margin-left: -10%;
+    }
+
+
+    /* EVENTS */
+
+    .events {
+        grid-template-columns: 40% 60%;
+    }
+
+    .events-image {
+        height: 400px;
+    }
+
+
+    /* ABOUT */
+
+    #About .modal-dialog {
+        width: 90vw;
+        margin: 3vh auto;
+    }
+
+    .bio-text {
+        padding-left: 120px;
+    }
+
+    .bio-photo {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        min-width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .bio-photo img {
+        display: block;
+        width: 85%;
+        height: auto;
+    }
+
+
+    /* CONTACT */
+
+    #Contact .modal-dialog {
+        width: 90vw;
+        margin: 4vh auto;
+    }
+
+    #Contact .modal-content {
+        min-height: 0;
+    }
+
+    .contact-layout {
+        min-height: 0;
+    }
+
+    .contact-form-container {
+        padding: 50px 50px 30px;
+    }
+
+    .contact-form {
+        min-height: 520px;
+        padding: 45px 50px 20px;
+    }
+
+    .contact-form input {
+        margin-bottom: 50px;
+    }
+
+    .contact-form textarea {
+        height: 80px;
+        margin-bottom: 80px;
+    }
+
+}
 
 
 
@@ -905,6 +1008,11 @@ body {
         margin-left: 10%;
     }
 
+    #About .modal-dialog {
+        width: 90vw;
+        margin: 5vh auto;
+    }
+
         .bio-text {
     padding-left: 10px;
     }
@@ -934,6 +1042,51 @@ body {
     display: block;
     width: 80%;
     height: auto;
+    }
+
+    #Contact .modal-dialog {
+        width: 85vw;
+        margin: 2vh auto;
+    }
+
+    #Contact .modal-content {
+        min-height: 0;
+    }
+
+    .contact-layout {
+        min-height: 0;
+    }
+
+    .contact-form-container {
+        padding: 25px 40px 20px;
+    }
+
+    .contact-form-container h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .contact-form {
+        min-height: 420px;
+        padding: 25px 40px 15px;
+    }
+
+    .contact-form input {
+        margin-bottom: 25px;
+    }
+
+    .contact-form textarea {
+        height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        font-size: 17px;
     }
 
 }
