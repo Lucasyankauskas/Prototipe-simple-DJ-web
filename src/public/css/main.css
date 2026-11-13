@@ -763,8 +763,7 @@ body {
 
 /* LAPTOP FULL HD 1920 */
 
-@media (min-width: 1441px) and (max-width: 1920px)
-       and (min-height: 750px) and (max-height: 950px) {
+@media (min-width: 1441px) and (max-width: 1980px) {
 
     /* HOME */
 

@@ -124,7 +124,7 @@
                     <!-- FORMULARIO DERECHA -->
                     <div class="contact-form-container">
                         <h1>CONTACTO</h1>
-                        <form class="contact-form">
+                        <form class="contact-form" id="contact-form">
                             <input
                                 type="text"
                                 name="nombre"
@@ -151,3 +151,40 @@
         </div>
     </div>
 </div>
+<script>
+document.getElementById('contact-form')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const form = this;
+    const button = form.querySelector('button[type="submit"]');
+
+    button.disabled = true;
+    button.textContent = 'Enviando...';
+
+    try {
+        const response = await fetch('/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams(new FormData(form))
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.message);
+        }
+
+        alert(result.message);
+        form.reset();
+
+    } catch (error) {
+        alert(error.message || 'Hubo un error al enviar el mensaje.');
+
+    } finally {
+        button.disabled = false;
+        button.textContent = 'Enviar';
+    }
+});
+</script>
