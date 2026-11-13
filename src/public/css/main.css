@@ -769,9 +769,14 @@ body {
 
 
 @media (max-width: 1440px) and (min-width: 1371px) {
+
+    .hero {
+        height: 90vh;
+    }
+
     .firma {
         width: 700px;
-        right: 45%;
+        right: 42%;
         top: 15%;
     }
 
@@ -781,12 +786,12 @@ body {
     }
 
     .social-buttons {
-        gap: 25px;
+        gap: 20px;
     }
 
     .fondo-home {
-    width: 135%;
-    margin-left: -15.5%;
+    width: 105%;
+    margin-left: -5.5%;
     }
 
     .events {
