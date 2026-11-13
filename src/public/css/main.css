@@ -1717,6 +1717,7 @@ body {
     #About .modal-dialog {
         width: 90vw;
         max-width: 360px;
+        margin: 5vh auto;
     }
 
     #About .modal-content {
@@ -1803,9 +1804,9 @@ body {
 
     /* CONTACTO */
     #Contact .modal-dialog {
-        width: 92vw;
+        width: 90vw;
         max-width: 400px;
-        margin: 8vh auto;
+        margin: 2vh auto;
     }
 
     #Contact .modal-content {
@@ -1847,14 +1848,14 @@ body {
     }
 
     #Contact .contact-form {
-        width: 85%;
+        width: 80%;
         min-height: 350px;
         padding: 65px 35px 25px;
         border-radius: 28px 0 28px 0;
     }
 
     #Contact .contact-form input {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 
     #Contact .contact-form textarea {
