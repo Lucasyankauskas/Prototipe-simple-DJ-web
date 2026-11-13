@@ -1520,9 +1520,9 @@ body {
     /* HOME */
     .hero {
         width: 100%;
-        height: 58svh;
-        min-height: 600px;
-        max-height: 700px;
+        height: 60svh;
+        min-height: 650px;
+        max-height: 750px;
         background: #000;
         overflow: hidden;
     }
