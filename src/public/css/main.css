@@ -802,6 +802,11 @@ body {
         height: 380px;
     }
 
+    #About .modal-dialog {
+        width: 90vw;
+        margin: 5vh auto;
+    }
+
     .bio-text {
     padding-left: 100px;
     }
@@ -819,6 +824,51 @@ body {
     display: block;
     width: 80%;
     height: auto;
+    }
+
+    #Contact .modal-dialog {
+        width: 85vw;
+        margin: 3vh auto;
+    }
+
+    #Contact .modal-content {
+        min-height: 0;
+    }
+
+    .contact-layout {
+        min-height: 0;
+    }
+
+    .contact-form-container {
+        padding: 35px 45px 25px;
+    }
+
+    .contact-form-container h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form {
+        min-height: 460px;
+        padding: 35px 45px 20px;
+    }
+
+    .contact-form input {
+        margin-bottom: 35px;
+    }
+
+    .contact-form textarea {
+        height: 70px;
+        margin-bottom: 45px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 17px;
+    }
+
+    .contact-form button {
+        font-size: 18px;
     }
 
 }
@@ -943,7 +993,7 @@ body {
     margin-bottom: 15px;
     }
 
-.bio-description p {
+    .bio-description p {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 1.2px;
