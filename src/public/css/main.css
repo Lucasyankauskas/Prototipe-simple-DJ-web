@@ -24,7 +24,7 @@
     align-items: center;
     gap: 70px;
     width: 95%;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px 0 10px 0;
     border-bottom: 3px solid #000;
 }
@@ -62,7 +62,17 @@
 body {
     background-color: #E4DAD2;
     font-family: 'Helvetica Neue Medium', 'Helvetica Neue', inter, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.hero,
+.events,
+.footer {
+    flex-shrink: 0;
+}
+
 
 .hero {
     position: relative;
@@ -1053,6 +1063,11 @@ body {
     letter-spacing: 4px;
     }
 
+    .footer {
+    box-sizing: border-box;
+    min-height: max(70px, calc(100dvh - 54px - 750px - 400px));
+    }
+
     .social-buttons {
         top: 60%;
         gap: 15px;
@@ -1193,7 +1208,12 @@ body {
     }
 
     .events-image {
-        height: 380px;
+        height: 420px;
+    }
+
+    .footer {
+    box-sizing: border-box;
+    min-height: max(70px, calc(100dvh - 54px - 600px - 420px));
     }
 
     .bio-text {
@@ -1343,7 +1363,7 @@ body {
     }
 
 .events-image {
-    height: 320px;
+    height: 450px;
     }
 
 .events-content {
@@ -1353,6 +1373,11 @@ body {
 .events-content h2 {
     font-size: 25px;
     letter-spacing: 3px;
+    }
+
+    .footer {
+    box-sizing: border-box;
+    min-height: max(70px, calc(100dvh - 54px - 450px - 450px));
     }
 
     #About .modal-dialog {
