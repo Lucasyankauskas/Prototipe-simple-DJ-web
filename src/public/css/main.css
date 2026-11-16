@@ -1725,7 +1725,7 @@ body {
     .footer {
         min-height: 62px;
         padding: 5px 10px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .footer-copy {
@@ -1737,17 +1737,7 @@ body {
     }
 
     .footer-bookings {
-        font-size: 11px;
-        line-height: 1.2;
-    }
-
-    .footer-bookings div {
-        font-size: 11px;
-        letter-spacing: 1px;
-    }
-
-    .footer-bookings a {
-        font-size: 9px;
+        display: none;
     }
 
     /* ABOUT */
