@@ -1,16 +1,27 @@
+<!-- ES/EN  -->
+
+<div class="language-switch">
+    <button type="button" class="language-link active" data-lang="es">ES</button>
+    <span>|</span>
+    <button type="button" class="language-link" data-lang="en">EN</button>
+</div>
+
+
 <!-- BOTONES MENU -->
 <div class="menu">
     <button type="button"
             class="menu-link"
             data-bs-toggle="modal"
-            data-bs-target="#About">
-        SOBRE MI
+            data-bs-target="#About"
+            data-i18n="nav.about">
+        SOBRE MÍ
     </button>
 
     <button type="button"
             class="menu-link"
             data-bs-toggle="modal"
-            data-bs-target="#Contact">
+            data-bs-target="#Contact"
+            data-i18n="nav.contact">
         CONTACTO
     </button>
 </div>
@@ -44,15 +55,15 @@
 
             <!-- TEXTO BIOGRAFÍA -->
                     <div class="bio-text">
-                    <h1>Biografía</h1>
+                    <h1 data-i18n="about.title">Biografía</h1>
                         <div class="bio-description">
-                            <p>
+                            <p data-i18n="about.p1">
                             Soy un DJ y productor argentino de Buenos Aires.
                             Mi propuesta musical parte del house y el deep house,
                             combinando sonidos de progressive house, indie dance,
                             tech house y minimal tech.
                             </p>
-                            <p>
+                            <p data-i18n="about.p2">
                             En mis sets busco construir un recorrido natural,
                             comenzando desde lugares más profundos y llevando
                             la energía de manera gradual. Más que limitarse a un
@@ -60,7 +71,7 @@
                             el groove, la intención y un hilo conductor a lo largo
                             de cada presentación.
                             </p>
-                            <p>
+                            <p data-i18n="about.p3">
                             A lo largo de mi carrera me he presentado en distintos
                             espacios de la escena de Buenos Aires, entre ellos
                             Afrika Club, Zegre, Downtempo, Lignéé y Morocco.
@@ -113,7 +124,7 @@
 
                         <!-- DATOS -->
                         <div class="contact-details">
-                            <p>Dj/Productor</p>
+                            <p  data-i18n="contact.role">Dj/Productor</p>
                             <a href="mailto:lucianomartzoficial@gmail.com">
                                 lucianomartzoficial@gmail.com
                             </a>
@@ -123,27 +134,31 @@
 
                     <!-- FORMULARIO DERECHA -->
                     <div class="contact-form-container">
-                        <h1>CONTACTO</h1>
+                        <h1 data-i18n="contact.title">CONTACTO</h1>
                         <form class="contact-form" id="contact-form">
                             <input
                                 type="text"
                                 name="nombre"
                                 placeholder="Nombre"
+                                data-i18n-placeholder="contact.name"
                                 required
                             >
                             <input
                                 type="tel"
                                 name="telefono"
                                 placeholder="Teléfono"
+                                data-i18n-placeholder="contact.phone"
                             >
                             <textarea
                                 name="mensaje"
                                 placeholder="Mensaje"
+                                data-i18n-placeholder="contact.message"
                                 required
                             ></textarea>
-                            <button type="submit">
+                            <button type="submit" data-i18n="contact.send">
                                 Enviar
                             </button>
+                            <input type="hidden" name="idioma" id="form-language" value="es">
                         </form>
                     </div>
                 </div>
@@ -160,6 +175,7 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
 
     button.disabled = true;
     button.textContent = 'Enviando...';
+    button.textContent = window.t("contact.sending");
 
     try {
         const response = await fetch('/contact', {
@@ -181,10 +197,12 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
 
     } catch (error) {
         alert(error.message || 'Hubo un error al enviar el mensaje.');
+        alert(error.message || window.t("form.genericError"));
 
     } finally {
         button.disabled = false;
         button.textContent = 'Enviar';
+        button.textContent = window.t("contact.send");
     }
 });
 </script>

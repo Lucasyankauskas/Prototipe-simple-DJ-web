@@ -50,7 +50,36 @@
 }
 
 
+.language-switch {
+    position: absolute;
+    top: 20px;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+    font-family: "Helvetica Neue Medium", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
 
+.language-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #777;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+.language-link.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.language-link:hover {
+    color: #000;
+}
 
 
 
@@ -1574,6 +1603,25 @@ body {
         color: #fff;
         font-size: 15px;
         letter-spacing: 1px;
+    }
+
+    .language-switch {
+    top: 5px;
+    right: 3%;
+    font-size: 9px;
+    gap: 6px;
+    }
+
+    .language-link {
+    color: #999;
+    }
+
+.language-link.active {
+    color: #fff;
+    }
+
+.language-link:hover {
+    color: #fff;
     }
 
 

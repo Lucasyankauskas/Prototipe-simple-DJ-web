@@ -19,7 +19,23 @@ const transporter = nodemailer.createTransport({
 });
 
 router.post('/contact', async (req, res) => {
-    const { nombre, telefono, mensaje } = req.body;
+    const { nombre, telefono, mensaje, idioma } = req.body;
+
+const en = idioma === 'en';
+
+const messages = {
+    required: en
+        ? 'Please complete the required fields.'
+        : 'Completá los campos obligatorios.',
+
+    success: en
+        ? 'Message sent successfully!'
+        : '¡Mensaje enviado correctamente!',
+
+    error: en
+        ? 'Could not send your message. Please try again.'
+        : 'No se pudo enviar el mensaje. Intentá nuevamente.'
+};
 
     if (!nombre || !mensaje) {
         return res.status(400).json({
