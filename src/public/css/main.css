@@ -1641,7 +1641,7 @@ body {
     /* HOME */
     .hero {
         width: 100%;
-        height: calc(100svh + 40px);
+        height: calc(100svh + 50px);
         min-height: 600px;
         max-height: none;
         background: #000;
